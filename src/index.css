@@ -8,12 +8,12 @@
 
 :root {
   /* Colors */
-  --primary-color: #2F4F4F;
-  --secondary-color: #E6AF37;
-  --background-color: #F5F3F5;
-  --text-color: #1C1C1C;
-  --accent-color: #8C8C8C;
-  --white-color: #FFFFFF;
+  --primary-color: #2f4f4f;
+  --secondary-color: #e6af37;
+  --background-color: #f5f3f5;
+  --text-color: #1c1c1c;
+  --accent-color: #8c8c8c;
+  --white-color: #ffffff;
 
   /* Font */
   --primary-header: "Manrope", sans-serif;
@@ -23,4 +23,124 @@
 
 body {
   min-width: 375px;
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+h1 {
+  font-family: var(--primary-header);
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+h2 {
+  font-family: var(--primary-header);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: var(--primary-header);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h4 {
+  font-family: var(--secondary-header);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h5 {
+  font-family: var(--secondary-header);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.text-header {
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.text-large {
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.text-regular {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.button-regular {
+  font-family: var(--primary-header);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.button-link {
+  font-family: var(--primary-header);
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.button-regular {
+  font-family: var(--primary-header);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.primary-button {
+  color: var(--white-color);
+  display: inline-flex;
+  padding: 0.75rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+}
+
+.secondary-button {
+  display: inline-flex;
+  padding: 0.75rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  background: var(--secondary-color);
 }
