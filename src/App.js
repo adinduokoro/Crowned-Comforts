@@ -1,7 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Layout } from "./ux";
+import { Home } from "./pages";
+
+
 function App() {
   return (
     <div className="App">
-      Hello World, Welcome to Crowned Comforts
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -99,7 +99,7 @@ h5 {
   line-height: 1.5rem;
 }
 
-.button-regular {
+.button-header {
   font-family: var(--primary-header);
   font-size: 1.75rem;
   font-style: normal;
