@@ -1,0 +1,63 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.header h2 {
+  max-width: 57rem;
+}
+
+.header span {
+  font-size: 4.375rem;
+}
+
+.header p {
+  max-width: 57rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 34rem;
+  height: 100%;
+}
+
+.card {
+  min-height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.imageContainer {
+  height: 12.5rem;
+}
+
+.imageContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content h3 span {
+  font-size: 2.1875rem;
+}
+

@@ -1,13 +1,9 @@
-import React from 'react'
-import styles from "./Footer.module.css"
-import {Section} from "../../ux"
+import React from "react";
+import styles from "./Footer.module.css";
+import { Section } from "../../ux";
 
 const Footer = () => {
-  return (
-    <Section>
-      fdfd
-    </Section>
-  )
-}
+  return <div>Footer</div>;
+};
 
-export default Footer
+export default Footer;

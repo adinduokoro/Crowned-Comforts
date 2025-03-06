@@ -5,7 +5,7 @@ import heroImage from "../../assets/hero-bg-image.jpg";
 const Hero = () => {
   return (
     <main
-      className={styles.hero}
+      className={`${styles.hero} parallax`}
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className={styles.gradient}></div>
@@ -19,9 +19,13 @@ const Hero = () => {
             Your home away from home—for business, travel, or anything in
             between.
           </p>
-          <div className="buttons">
-            {/* book your stay */}
-            {/* contact us */}
+          <div className={styles.buttons}>
+            <button className="primary-button button-regular">
+              Book Your Stay
+            </button>
+            <button className="secondary-button button-regular">
+              Contact US
+            </button>
           </div>
         </div>
       </div>

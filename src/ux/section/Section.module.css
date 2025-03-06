@@ -6,12 +6,12 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
 }
 
 .wrapper {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   max-width: 70rem;
   width: 100%;
@@ -20,3 +20,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.backgroundWrapper {
+  position: relative;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.amenitiesBackground{
+  background-color: var(--primary-color);
+}
+
+
+
