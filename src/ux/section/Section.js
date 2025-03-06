@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Section.module.css";
 import aboutBackground from "../../assets/about-bg-image.jpg";
+import contactBackground from "../../assets/contact-image.jpg";
 
 const Section = ({ children, background }) => {
   return (
@@ -18,6 +19,16 @@ const Section = ({ children, background }) => {
         <div
           className={`${styles[background]} ${styles.backgroundWrapper}`}
         ></div>
+      )}
+
+      {/* Contact Section Background */}
+      {background === "contactBackground" && (
+        <div
+          style={{ backgroundImage: `url(${contactBackground})` }}
+          className={`${styles[background]} ${styles.backgroundWrapper} parallax`}
+        >
+          <div className={styles.contactBackgroundOne}></div>
+        </div>
       )}
 
       <div className={styles.wrapper}>{children}</div>
