@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Section.module.css";
 import aboutBackground from "../../assets/about-bg-image.jpg";
 import contactBackground from "../../assets/contact-image.jpg";
+import aboutHeaderBackgroundImage from "../../assets/about-header-image.jpg";
 
 const Section = ({ children, background }) => {
   return (
@@ -27,7 +28,17 @@ const Section = ({ children, background }) => {
           style={{ backgroundImage: `url(${contactBackground})` }}
           className={`${styles[background]} ${styles.backgroundWrapper} parallax`}
         >
-          <div className={styles.contactBackgroundOne}></div>
+          <div className={styles.contactOverlay}></div>
+        </div>
+      )}
+
+      {/* About Page Header Section Background */}
+      {background === "pageHeaderBackground" && (
+        <div
+          style={{ backgroundImage: `url(${aboutHeaderBackgroundImage})` }}
+          className={`${styles[background]} ${styles.backgroundWrapper} parallax`}
+        >
+          <div className={styles.aboutOverlay}></div>
         </div>
       )}
 

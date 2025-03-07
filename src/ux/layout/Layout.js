@@ -7,7 +7,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Layout = () => {
   useEffect(() => {
     const nav = document.querySelector(`.${styles.navigation}`);
@@ -24,15 +23,17 @@ const Layout = () => {
         nav.classList.remove(styles.active);
       },
     });
-  }, []); 
+  }, []);
 
   return (
     <div className={styles.layout}>
       <div className={styles.navigation}>
         <Navigation />
       </div>
-      <Outlet />
-      <Footer />
+      <div className={styles.outlet}>
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 };

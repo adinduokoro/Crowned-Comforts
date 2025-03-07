@@ -8,7 +8,7 @@
   padding: 0 2rem;
 }
 
-.gradient {
+.overlay {
   position: absolute;
   opacity: .70;
   top: 0;

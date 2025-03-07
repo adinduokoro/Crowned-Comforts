@@ -9,7 +9,7 @@ const Hero = () => {
       className={`${styles.hero} parallax`}
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className={styles.gradient}></div>
+      <div className={styles.overlay}></div>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h1>
@@ -22,14 +22,14 @@ const Hero = () => {
           </p>
           <div className={styles.buttons}>
             <Link to={"/"}>
-            <button className="primary-button button-regular">
-              Book Your Stay
-            </button>
+              <button className="primary-button button-regular">
+                Book Your Stay
+              </button>
             </Link>
-            <Link to={"contactUs"}>
-            <button className="secondary-button button-regular">
-              Contact US
-            </button>
+            <Link to={"contact"}>
+              <button className="secondary-button button-regular">
+                Contact US
+              </button>
             </Link>
           </div>
         </div>
