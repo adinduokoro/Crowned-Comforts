@@ -1,0 +1,19 @@
+.contact {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 3px red solid;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0rem 2rem;
+}
