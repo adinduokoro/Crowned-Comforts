@@ -5,6 +5,7 @@
 .cards {
   display: flex;
   width: 100%;
+  padding: 6rem 0;
 }
 
 .card {
