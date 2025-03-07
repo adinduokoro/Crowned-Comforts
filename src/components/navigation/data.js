@@ -1,7 +1,7 @@
 export const links = [
-  { name: "About" },
-  { name: "Our Services" },
-  { name: "Amenities" },
-  { name: "Partner with Us" },
-  { name: "Contact" },
+  { name: "About", to: "about" },
+  { name: "Our Services", to: "services" },
+  { name: "Amenities", to: "amenities" },
+  { name: "Partner with Us", to: "partner" },
+  { name: "Contact", to: "contactUs" },
 ];
