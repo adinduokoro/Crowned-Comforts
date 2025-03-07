@@ -10,8 +10,8 @@ const Contact = () => {
         <ul className={styles.cards}>
           {contacts.map((contact, index) => (
             <li className={styles.card} key={index}>
-              <p className="button-regular">{contact.title}</p>
-              <p className="text-regular">
+              <p className={`${styles.header} button-regular`}>{contact.title}</p>
+              <p className={`${styles.description} text-regular`}>
                 {contact.description}
               </p>
             </li>

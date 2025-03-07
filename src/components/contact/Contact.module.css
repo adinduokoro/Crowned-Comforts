@@ -11,10 +11,23 @@
 .card {
   display: flex;
   flex-direction: column;
-  border: 3px red solid;
   width: 100%;
   align-items: center;
   text-align: center;
   gap: 0.5rem;
   padding: 0rem 2rem;
+}
+
+.card:nth-child(2){
+  border-left: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--secondary-color);
+}
+
+.header{
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.description {
+  color: var(--text-color);
 }

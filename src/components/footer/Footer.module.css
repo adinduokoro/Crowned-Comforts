@@ -1,0 +1,7 @@
+.footerBackground {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  color: var(--white-color);
+}

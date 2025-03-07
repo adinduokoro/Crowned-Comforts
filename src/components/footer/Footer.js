@@ -1,9 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { Section } from "../../ux";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  const year = new Date().getFullYear()
+
+  return (
+    <div className={`${styles.footerBackground} button-regular`}>
+      Copyright ⓒ {year} - Crowed Comforts - All Rights Reserve
+    </div>
+  );
 };
 
 export default Footer;
