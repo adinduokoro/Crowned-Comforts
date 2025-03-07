@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import heroImage from "../../assets/hero-bg-image.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -20,12 +21,16 @@ const Hero = () => {
             between.
           </p>
           <div className={styles.buttons}>
+            <Link to={"/"}>
             <button className="primary-button button-regular">
               Book Your Stay
             </button>
+            </Link>
+            <Link to={"contactUs"}>
             <button className="secondary-button button-regular">
               Contact US
             </button>
+            </Link>
           </div>
         </div>
       </div>

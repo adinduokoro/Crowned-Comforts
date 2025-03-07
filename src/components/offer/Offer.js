@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Offer.module.css";
 import { Section } from "../../ux";
 import { offers } from "./data";
+import { Link } from "react-router-dom";
 
 const Offer = () => {
   return (
@@ -28,7 +29,9 @@ const Offer = () => {
                 <p className="text-regular">{offer.description}</p>
               </div>
               <div className={styles.buttonContainer}>
+                <Link to={"services"}>
                 <button className="primary-button">Read More</button>
+                </Link>
               </div>
             </li>
           ))}

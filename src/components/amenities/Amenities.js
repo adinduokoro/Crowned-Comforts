@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Amenities.module.css";
-import { Section } from "../../ux";
 import { amenities } from "./data";
+import { Link } from "react-router-dom";
 
 const Amenities = () => {
   return (
@@ -16,7 +16,11 @@ const Amenities = () => {
         <div className={styles.content}>
           <ul className={styles.cards}>
             {amenities.map((amenity, index) => (
-              <li className={styles.card} style={{backgroundImage: `url(${amenity.image})`}} key={index}>
+              <li
+                className={styles.card}
+                style={{ backgroundImage: `url(${amenity.image})` }}
+                key={index}
+              >
                 <a href="" className="button-header">
                   {amenity.name}
                 </a>
@@ -24,7 +28,9 @@ const Amenities = () => {
             ))}
           </ul>
           <div className={styles.buttonContainer}>
-            <button className="secondary-button">View All Services</button>
+            <Link to={"services"}>
+              <button className="secondary-button">View All Services</button>
+            </Link>
           </div>
         </div>
       </div>
