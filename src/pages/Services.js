@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { PageHeader } from "../ux";
+import { MoreOffer, OtherOffer } from "../components";
 
-const Services = () => {
+const Services = ({ header }) => {
   return (
-    <div>Services</div>
-  )
-}
+    <div>
+      <PageHeader header={header} />
+      <MoreOffer />
+      <OtherOffer />
+    </div>
+  );
+};
 
-export default Services
+export default Services;

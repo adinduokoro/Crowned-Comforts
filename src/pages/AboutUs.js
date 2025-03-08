@@ -1,12 +1,13 @@
 import React from "react";
 import { PageHeader } from "../ux";
-import { About } from "../components";
+import { Cta, Mission } from "../components";
 
-const AboutUs = () => {
+const AboutUs = ({ header }) => {
   return (
     <div>
-      <PageHeader />
-      <About />
+      <PageHeader header={header} />
+      <Mission />
+      <Cta />
     </div>
   );
 };

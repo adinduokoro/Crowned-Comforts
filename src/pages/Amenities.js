@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { PageHeader } from "../ux";
 
-const Amenities = () => {
-  return (
-    <div>Amenities</div>
-  )
-}
+const Amenities = ({ header }) => {
+  return <PageHeader header={header} />;
+};
 
-export default Amenities
+export default Amenities;

@@ -1,0 +1,68 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.familyOwned {
+  display: flex;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header,
+.paragraphOne,
+.paragraphTwo {
+  width: 100%;
+}
+
+.top {
+  color: var(--accent-color);
+}
+
+.bottom {
+  display: flex;
+  gap: 3rem;
+}
+
+.line {
+  margin-top: 8px;
+  width: 0.25rem;
+  min-height: 4rem;
+  background-color: var(--secondary-color);
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.cards {
+  display: flex;
+  min-height: 25rem;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  padding: 2rem 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--Border-Primary, rgba(140, 140, 140, 0.25));
+  text-align: center;
+}
+
+.card h5 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.card p {
+  color: var(--text-color);
+}

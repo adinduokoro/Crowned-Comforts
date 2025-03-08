@@ -4,4 +4,8 @@ export { default as About } from "./about/About";
 export { default as Offer } from "./offer/Offer";
 export { default as Amenities } from "./amenities/Amenities";
 export { default as Contact } from "./contact/Contact";
+export { default as Mission } from "./mission/Mission";
+export { default as Cta } from "./cta/Cta";
+export { default as MoreOffer } from "./moreOffer/MoreOffer";
+export { default as OtherOffer } from "./otherOffer/OtherOffer";
 export { default as Footer } from "./footer/Footer";

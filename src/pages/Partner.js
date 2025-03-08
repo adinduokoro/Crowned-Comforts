@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { PageHeader } from "../ux";
 
-const Partner = () => {
+const Partner = ({ header }) => {
   return (
-    <div>Partner</div>
-  )
-}
+    <div>
+      <PageHeader header={header} />
+    </div>
+  );
+};
 
-export default Partner
+export default Partner;

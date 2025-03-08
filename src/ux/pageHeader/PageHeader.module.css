@@ -1,8 +1,7 @@
 .pageHeader {
   margin-top: 7.5rem;
- border: 4px solid yellow;
  width: 100%;
- padding: 9.75rem 0;
+ padding: 5rem 0;
  display: flex;
  justify-content: space-between;
 }
@@ -13,4 +12,22 @@
 
 .pageHeader span {
   font-size: 4.375rem;
+}
+
+.socialLinks {
+  display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+.link {
+  display: flex;
+width: 3.5rem;
+height: 3.5rem;
+padding: 0.75rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 6.25rem;
+border: 2px solid var(--white-color);
 }

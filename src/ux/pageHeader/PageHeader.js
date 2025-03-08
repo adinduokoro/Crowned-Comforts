@@ -1,17 +1,21 @@
 import React from "react";
 import styles from "./PageHeader.module.css";
 import { Section } from "../../ux";
+import { socialLinks } from "./data";
 
-const PageHeader = () => {
+const PageHeader = ({ header }) => {
   return (
     <Section background="pageHeaderBackground">
       <div className={styles.pageHeader}>
-        <h2><span>A</span>BOUT <span>U</span>S</h2>
+        <h2>
+          {header}
+        </h2>
         <ul className={styles.socialLinks}>
-          <li>facebook</li>
-          <li>linkedin</li>
-          <li>instagram</li>
-          <li>tiktok</li>
+          {socialLinks.map((link, index) => (
+            <li className={styles.link} key={index}>
+              <img src={link.icon} alt={link.name} />
+            </li>
+          ))}
         </ul>
       </div>
     </Section>

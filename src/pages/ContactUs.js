@@ -1,9 +1,12 @@
 import React from "react";
+import { PageHeader } from "../ux";
+import { Contact } from "../components";
 
-const ContactUs = () => {
+const ContactUs = ({header}) => {
   return (
     <div>
-      contact
+      <PageHeader header={header} />
+      <Contact />
     </div>
   );
 };

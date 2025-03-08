@@ -3,6 +3,7 @@ import styles from "./Section.module.css";
 import aboutBackground from "../../assets/about-bg-image.jpg";
 import contactBackground from "../../assets/contact-image.jpg";
 import aboutHeaderBackgroundImage from "../../assets/about-header-image.jpg";
+import ctaBackground from "../../assets/cta-bg-image.jpg"
 
 const Section = ({ children, background }) => {
   return (
@@ -39,6 +40,16 @@ const Section = ({ children, background }) => {
           className={`${styles[background]} ${styles.backgroundWrapper} parallax`}
         >
           <div className={styles.aboutOverlay}></div>
+        </div>
+      )}
+
+      {/* Cta Section Background */}
+      {background === "ctaBackground" && (
+        <div
+          style={{ backgroundImage: `url(${ctaBackground})` }}
+          className={`${styles[background]} ${styles.backgroundWrapper}`}
+        >
+          <div className={styles.ctaOverlay}></div>
         </div>
       )}
 

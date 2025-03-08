@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./ux";
 import { AboutUs, Amenities, Home, Partner, ContactUs, Services } from "./pages";
-
-
+import { links } from "./components/navigation/data";
 
 function App() {
   return (
@@ -11,11 +10,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<AboutUs />} /> 
-            <Route path="services" element={<Services />} /> 
-            <Route path="amenities" element={<Amenities />} /> 
-            <Route path="partner" element={<Partner />} /> 
-            <Route path="contact" element={<ContactUs />} /> 
+            <Route path="about" element={<AboutUs header={links[0].header} />} />
+            <Route path="services" element={<Services header={links[1].header} />} />
+            <Route path="amenities" element={<Amenities header={links[2].header} />} />
+            <Route path="partner" element={<Partner header={links[3].header} />} />
+            <Route path="contact" element={<ContactUs header={links[4].header}/>} />
           </Route>
         </Routes>
       </BrowserRouter>
