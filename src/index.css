@@ -21,6 +21,8 @@
   --body-font: "DM Sans", sans-serif;
   --button-text: Poppins, sans-serif;
 
+  /* Border */
+  --border-primary: var(--accent-color) 
 }
 
 body {

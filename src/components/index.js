@@ -8,4 +8,7 @@ export { default as Mission } from "./mission/Mission";
 export { default as Cta } from "./cta/Cta";
 export { default as MoreOffer } from "./moreOffer/MoreOffer";
 export { default as OtherOffer } from "./otherOffer/OtherOffer";
+export { default as BookNow } from "./bookNow/BookNow";
+export { default as MessageUs } from "./messageUs/MessageUs";
+export { default as Faq } from "./faq/Faq";
 export { default as Footer } from "./footer/Footer";

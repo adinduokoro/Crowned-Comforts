@@ -1,6 +1,6 @@
 import React from "react";
 import { PageHeader } from "../ux";
-import { MoreOffer, OtherOffer } from "../components";
+import { BookNow, MoreOffer, OtherOffer } from "../components";
 
 const Services = ({ header }) => {
   return (
@@ -8,6 +8,7 @@ const Services = ({ header }) => {
       <PageHeader header={header} />
       <MoreOffer />
       <OtherOffer />
+      <BookNow />
     </div>
   );
 };
