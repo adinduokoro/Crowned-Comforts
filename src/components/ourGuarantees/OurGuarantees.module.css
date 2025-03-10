@@ -1,0 +1,31 @@
+.ourGuarantees{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 2rem;
+  border: 1px solid var(--Border-Primary, rgba(140, 140, 140, 0.25));
+  overflow: hidden;
+}
+
+.imageContainer {
+  height: 12.5rem;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  color: var(--text-color);
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+}
