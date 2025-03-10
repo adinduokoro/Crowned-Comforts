@@ -1,0 +1,99 @@
+.messageUs {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.header {
+  color: var(--text-color);
+}
+
+.header span {
+  font-size: 2.1875rem;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  min-height: 29rem;
+}
+
+.messageBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.subheader {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.line {
+  margin: 0.125rem;
+  width: 0.25rem;
+  height: 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form input,
+.form textarea {
+  font-family: var(--body-font);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  font-family: var(--body-font);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fields {
+  display: flex;
+  gap: 2rem;
+}
+
+.fields input {
+  width: 100%;
+}
+
+.message {
+  min-height: 8rem;
+}
+
+.imageContainer {
+  height: 100%;
+  width: 22rem;
+  height: 29rem;
+}
+
+.imageContainer img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.footNote {
+  color: var(--text-color);
+}

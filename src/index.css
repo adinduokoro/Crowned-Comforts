@@ -35,6 +35,25 @@ button {
   cursor: pointer;
 }
 
+input, textarea {
+  all: unset;
+}
+
+
+
+input {
+  display: flex;
+padding: 1rem;
+gap: 2rem;
+border: 1px solid var(--Border-Primary, rgba(140, 140, 140, 0.25));
+}
+
+textarea{
+  border: 1px solid var(--Border-Primary, rgba(140, 140, 140, 0.25));
+  padding: 1rem;
+  resize: none;
+}
+
 ul {
   list-style: none; 
   padding: 0;
