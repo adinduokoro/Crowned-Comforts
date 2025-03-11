@@ -13,6 +13,7 @@ export { default as OurGuarantees } from "./ourGuarantees/OurGuarantees";
 export { default as Sponsors } from "./sponsors/Sponsors";
 export { default as OurPromise } from "./ourPromise/OurPromise";
 export { default as OurTenants } from "./ourTenants/OurTenants";
+export { default as Operations } from "./operations/Operations";
 export { default as MessageUs } from "./messageUs/MessageUs";
 export { default as Faq } from "./faq/Faq";
 export { default as Footer } from "./footer/Footer";

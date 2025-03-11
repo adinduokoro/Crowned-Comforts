@@ -3,6 +3,7 @@ import styles from "./OurPromise.module.css";
 import backgroundRight from "../../assets/ourPromise-background-right.svg";
 import backgroundLeft from "../../assets/ourPromise-background-left.svg";
 import { promises } from "./data";
+import { Link } from "react-router-dom";
 
 
 
@@ -31,7 +32,9 @@ const OurPromise = () => {
         );
       })}
       <div className={styles.button}>
+        <Link to="/contact">
         <button className="primary-button">Let's Connect</button>
+        </Link>
       </div>
     </div>
   );

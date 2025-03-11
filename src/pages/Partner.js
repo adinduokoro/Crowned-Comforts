@@ -1,6 +1,6 @@
 import React from "react";
 import { PageHeader } from "../ux";
-import { OurGuarantees, OurPromise, OurTenants, Sponsors } from "../components";
+import { Operations, OurGuarantees, OurPromise, OurTenants, Sponsors } from "../components";
 
 const Partner = ({ header }) => {
   return (
@@ -10,6 +10,7 @@ const Partner = ({ header }) => {
       <Sponsors />
       <OurPromise />
       <OurTenants />
+      <Operations />
     </div>
   );
 };
