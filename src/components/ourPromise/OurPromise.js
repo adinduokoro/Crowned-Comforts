@@ -5,14 +5,11 @@ import backgroundLeft from "../../assets/ourPromise-background-left.svg";
 import { promises } from "./data";
 import { Link } from "react-router-dom";
 
-
-
 const OurPromise = () => {
   return (
     <div className={styles.cards}>
       {promises.map((promise, index) => {
         const isFlipped = index % 2 !== 0; // Flip if index is odd (nth-child even)
-
         return (
           <div
             className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
@@ -24,7 +21,7 @@ const OurPromise = () => {
             <div className={styles.promise}>
               <div className={styles.content}>
                 <h3>{promise.title}</h3>
-                  {promise.text}
+                {promise.text}
               </div>
               <div className={styles.filler}></div>
             </div>
@@ -33,7 +30,7 @@ const OurPromise = () => {
       })}
       <div className={styles.button}>
         <Link to="/contact">
-        <button className="primary-button">Let's Connect</button>
+          <button className="primary-button">Let's Connect</button>
         </Link>
       </div>
     </div>
