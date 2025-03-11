@@ -1,0 +1,37 @@
+.sponsors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  max-width: 46rem;
+  justify-content: space-between;
+}
+
+.card {
+  min-height: 8rem;
+  height: 100%;
+  display: flex;
+  min-width: 9.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+    height: 1.5rem;
+}

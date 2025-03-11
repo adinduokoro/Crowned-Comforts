@@ -11,6 +11,7 @@ export { default as OtherOffer } from "./otherOffer/OtherOffer";
 export { default as BookNow } from "./bookNow/BookNow";
 export { default as OurGuarantees } from "./ourGuarantees/OurGuarantees";
 export { default as Sponsors } from "./sponsors/Sponsors";
+export { default as OurPromise } from "./ourPromise/OurPromise";
 export { default as OurTenants } from "./ourTenants/OurTenants";
 export { default as MessageUs } from "./messageUs/MessageUs";
 export { default as Faq } from "./faq/Faq";

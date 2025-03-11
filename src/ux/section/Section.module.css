@@ -6,12 +6,12 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  /* border: 2px solid green; */
+  border: 2px solid green;
 
 }
 
 .wrapper {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   display: flex;
   max-width: 70rem;
   width: 100%;
