@@ -73,4 +73,5 @@
 .descriptionContent .bullet {
   font-weight: 600;
   color: var(--primary-color);
+  margin-left: 1.5rem;
 }
