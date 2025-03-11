@@ -1,59 +1,74 @@
 .cards {
-  border: 4px solid green;
-  overflow: hidden;
-  padding: 2rem 0rem;
-  align-items: stretch; /* Ensures all children keep the same height */
-
-}
-
-.card {
-  border: 2px solid red;
-  display: flex;
-  width: 100%; /* Full width */
-  min-height: 30rem; /* Fixed height */
-  position: relative;
-  justify-content: center;
-  padding: 0 2rem;
-}
-
-.backgroundContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-}
-
-.backgroundContainer img {
-  height: 100%;
-  min-width: 32rem;
-  width: 100%; /* Stretches to full width */
-  object-fit: fill; /* Ensures it covers the area */
-  z-index: -1;
-}
-
-.promise {
-border: 3px solid yellowgreen;
-width: 100%;
-max-width: 70rem;
-display: flex;
-}
-
-.content, .filler{
+    overflow: hidden;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+align-items: center;  }
+  
+  .card {
+    display: flex;
     width: 100%;
-    border: 3px solid blueviolet;
-    padding: 2rem;
-}
-
-.content{
+    min-height: 30rem;
+    position: relative;
+    justify-content: center;
+  }
+  
+  /* Background defaults to right */
+  .backgroundContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+  }
+  
+  .backgroundContainer img {
+    height: 100%;
+    min-width: 32rem;
+    width: 100%;
+    object-fit: fill;
+  }
+  
+  /* Flip elements if .flipped class is present */
+  .card.flipped .backgroundContainer {
+    right: auto;
+    left: 0;
+  }
+  
+  .card.flipped .promise {
+    flex-direction: row-reverse;
+  }
+  
+  .promise {
+    width: 100%;
+    max-width: 70rem;
+    display: flex;
+  }
+  
+  .content,
+  .filler {
+    width: 100%;
+    padding:2rem;
+  }
+  
+  .content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.descriptionContent{
+    justify-content: center;
+  }
+  
+  .descriptionContent {
     display: flex;
     flex-direction: column;
-gap: 1rem;}
+    gap: 1rem;
+  }
 
+  .descriptionContent .text {
+    margin-left: 1.5rem;
+  }
 
+  .descriptionContent .bullet {
+font-weight: 600; 
+color: var(--primary-color); }
