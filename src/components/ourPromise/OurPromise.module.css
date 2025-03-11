@@ -1,74 +1,76 @@
 .cards {
-    overflow: hidden;
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-align-items: center;  }
-  
-  .card {
-    display: flex;
-    width: 100%;
-    min-height: 30rem;
-    position: relative;
-    justify-content: center;
-  }
-  
-  /* Background defaults to right */
-  .backgroundContainer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    z-index: -1;
-  }
-  
-  .backgroundContainer img {
-    height: 100%;
-    min-width: 32rem;
-    width: 100%;
-    object-fit: fill;
-  }
-  
-  /* Flip elements if .flipped class is present */
-  .card.flipped .backgroundContainer {
-    right: auto;
-    left: 0;
-  }
-  
-  .card.flipped .promise {
-    flex-direction: row-reverse;
-  }
-  
-  .promise {
-    width: 100%;
-    max-width: 70rem;
-    display: flex;
-  }
-  
-  .content,
-  .filler {
-    width: 100%;
-    padding:2rem;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .descriptionContent {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  overflow: hidden;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .descriptionContent .text {
-    margin-left: 1.5rem;
-  }
+.card {
+  display: flex;
+  width: 100%;
+  min-height: 30rem;
+  position: relative;
+  justify-content: center;
+}
 
-  .descriptionContent .bullet {
-font-weight: 600; 
-color: var(--primary-color); }
+/* Background defaults to right */
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.backgroundContainer img {
+  height: 100%;
+  min-width: 32rem;
+  width: 100%;
+  object-fit: fill;
+}
+
+/* Flip elements if .flipped class is present */
+.card.flipped .backgroundContainer {
+  right: auto;
+  left: 0;
+}
+
+.card.flipped .promise {
+  flex-direction: row-reverse;
+}
+
+.promise {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+}
+
+.content,
+.filler {
+  width: 100%;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.descriptionContent .text {
+  margin-left: 1.5rem;
+}
+
+.descriptionContent .bullet {
+  font-weight: 600;
+  color: var(--primary-color);
+}
