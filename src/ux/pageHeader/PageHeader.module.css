@@ -30,4 +30,5 @@ align-items: center;
 gap: 0.625rem;
 border-radius: 6.25rem;
 border: 2px solid var(--white-color);
+cursor: pointer;
 }

@@ -28,7 +28,7 @@ const OurPromise = () => {
           </div>
         );
       })}
-      <div className={styles.button}>
+      <div className={styles.buttonContainer}>
         <Link to="/contact">
           <button className="primary-button">Let's Connect</button>
         </Link>
