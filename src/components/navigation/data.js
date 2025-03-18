@@ -26,7 +26,7 @@ export const links = [
       </>
     ),
   },
-  { name: "Amenities", to: "amenities", header: "" },
+  { name: "Amenities", to: "/", header: "" },
   {
     name: "Partner with Us",
     to: "partner",
