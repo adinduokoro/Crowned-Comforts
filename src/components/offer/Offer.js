@@ -25,12 +25,12 @@ const Offer = () => {
                 <div className={styles.imageContainer}>
                   <img src={offer.image} alt={offer.title} />
                 </div>
-                <h3>{offer.title}</h3>
+                <h3 style={{ whiteSpace: "nowrap" }}>{offer.title}</h3>
                 <p className="text-regular">{offer.description}</p>
               </div>
               <div className={styles.buttonContainer}>
                 <Link to={"services"}>
-                <button className="primary-button">Read More</button>
+                  <button className="primary-button">Read More</button>
                 </Link>
               </div>
             </li>

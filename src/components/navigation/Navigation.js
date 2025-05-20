@@ -6,6 +6,8 @@ import logo from "../../assets/logo.svg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
+import menuIcon from "../../assets/menu-icon.svg"
+import menuIconDark from "../../assets/menu-icon-dark.svg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +51,9 @@ const Navigation = () => {
             </li>
           ))}
         </ul>
+        <div className={styles.menuIcon}>
+          <img src={scrolled ? menuIconDark : menuIcon} alt="close menu" />
+        </div>
       </div>
     </header>
   );

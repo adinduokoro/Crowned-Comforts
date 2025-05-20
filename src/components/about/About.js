@@ -41,7 +41,6 @@ const About = () => {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          '
           <img src={aboutImage} alt="" />
         </div>
       </div>

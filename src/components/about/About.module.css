@@ -29,9 +29,7 @@
   color: var(--white-color);
 }
 
-.header span {
-  font-size: 4.375rem;
-}
+
 
 .content {
   display: flex;
@@ -58,4 +56,21 @@
 .imageContainer img {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+.about {
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 44rem;
+  align-items: center;
+}
+
+.imageContainer{
+  max-width: 22rem;
+  width: 100%;
+  min-height: auto;
+}
+
+
 }

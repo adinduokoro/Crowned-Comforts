@@ -81,6 +81,10 @@ h2 {
   line-height: 4rem;
 }
 
+h2 span {
+  font-size: 4.375rem;
+}
+
 h3 {
   font-family: var(--primary-header);
   font-size: 1.75rem;
@@ -179,4 +183,22 @@ h5 {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+h1 {
+  font-size: 4.05rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: 3.15rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+h2 span {
+  font-size: 3.9375rem;
+}
 }
